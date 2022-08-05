@@ -101,10 +101,13 @@ impl MpuXDevice {
         b == (MpuXDevice::MPU9250 as u8)
         || b == (MpuXDevice::MPU9255 as u8)
         || b == (MpuXDevice::MPU6500 as u8)
+        || b == 0x75
     }
 
     fn marg_supported(b: u8) -> bool {
-        b == (MpuXDevice::MPU9250 as u8) || b == (MpuXDevice::MPU9255 as u8)
+        b == (MpuXDevice::MPU9250 as u8)
+        || b == (MpuXDevice::MPU9255 as u8)
+        || b == 0x75
     }
 }
 
