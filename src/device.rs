@@ -1,11 +1,11 @@
-use ak8963::{self, AK8963};
-
 use hal::blocking::delay::DelayMs;
 use hal::blocking::i2c;
 use hal::blocking::spi;
 use hal::digital::v2::OutputPin;
 
-use Register;
+use crate::ak8963;
+use crate::ak8963::AK8963;
+use crate::Register;
 
 /// MPU's I2C address (AD0 low)
 const MPU_I2C_ADDR: u8 = 0x68;
