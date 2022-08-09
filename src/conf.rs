@@ -356,8 +356,11 @@ impl Default for DmpFeatures {
 #[derive(Copy, Clone, Debug)]
 /// Dmp configuration
 pub struct DmpConfiguration {
+    #[allow(unused)]
     pub(crate) orientation: Orientation,
+    #[allow(unused)]
     pub(crate) features: DmpFeatures,
+    #[allow(unused)]
     pub(crate) rate: DmpRate,
 }
 impl Default for DmpConfiguration {
